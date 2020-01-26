@@ -1,3 +1,1 @@
----
----
-{%- include search-providers/default/search-data.js -%}
+window.TEXT_SEARCH_DATA={'posts':[]};
