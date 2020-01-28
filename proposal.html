@@ -1,11 +1,11 @@
 <!DOCTYPE html><html lang="en">
   <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><title>404 - Taxicab</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><title>Proposal - Taxicab</title>
 
 <meta name="description" content=""UCI CS175 Group 8, Winter 2020"
 ">
-<link rel="canonical" href="/404.html"><link rel="alternate" type="application/rss+xml" title="Taxicab" href="/feed.xml"><!-- start favicons snippet, use https://realfavicongenerator.net/ -->
+<link rel="canonical" href="/proposal.html"><link rel="alternate" type="application/rss+xml" title="Taxicab" href="/feed.xml"><!-- start favicons snippet, use https://realfavicongenerator.net/ -->
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
@@ -365,7 +365,7 @@
 </g>
 </svg><a title=""UCI CS175 Group 8, Winter 2020"
 " href="/">Taxicab</a></div><button class="button button--secondary button--circle search-button js-search-toggle"><i class="fas fa-search"></i></button></div><nav class="navigation">
-        <ul><li class="navigation__item"><a href="/proposal.html">Proposal</a></li><li class="navigation__item"><a href="/archive.html">Archive</a></li><li><button class="button button--secondary button--circle search-button js-search-toggle"><i class="fas fa-search"></i></button></li></ul>
+        <ul><li class="navigation__item navigation__item--active"><a href="/proposal.html">Proposal</a></li><li class="navigation__item"><a href="/archive.html">Archive</a></li><li><button class="button button--secondary button--circle search-button js-search-toggle"><i class="fas fa-search"></i></button></li></ul>
       </nav></div>
   </header>
 </div><div class="page__content"><div class ="main"><div class="grid grid--reverse">
@@ -374,15 +374,190 @@
 
               <div class="col-main cell cell--auto"><!-- start custom main top snippet -->
 
-<!-- end custom main top snippet --><article itemscope itemtype="http://schema.org/WebPage"><header style="display:none;"><h1>404</h1></header><meta itemprop="headline" content="404"><meta itemprop="author" content="Taxicab"/><div class="js-article-content"><div class="layout--404">
-  <div class="sign">
-    <h1>404</h1>
-    <p>Page not found</p>
-  </div>
+<!-- end custom main top snippet --><article itemscope itemtype="http://schema.org/Article"><div class="article__header"><header><h1>Proposal</h1></header></div><meta itemprop="headline" content="Proposal"><meta itemprop="author" content="Taxicab"/><div class="js-article-content"><div class="layout--article"><!-- start custom article top snippet -->
+
+<!-- end custom article top snippet --><div class="article__content" itemprop="articleBody"><!--
+
+# Project Proposal
+
+For the proposal, you have to finalize your teams of 3, propose an idea for your
+course project, describe the evaluation plan, and set up a project website with
+a page for this submission. If you have a team of 2, you'll have to either find
+someone to join you, or break up and join another team of 2. We expect you to
+maintain a private Github repository for the code, and an associated website.
+
+## Summary of the Project
+
+In a paragraph mention the main idea behind your project. Focus on the problem
+setup, not the solution, i.e. what is your goal? At the very least, you should
+have a sentence that clearly explains the input/output semantics of your
+project, i.e. what information will it take as input, and what will it produce.
+Mention any applications, if any, for your project.
+
+## Evaluation Plan
+
+Mention how you will evaluate the success of your project. In a paragraph, focus
+on the quantitative evaluation: what are the metrics, what are the baselines, by
+how much you expect your approach to improve the metric, what data will you
+evaluate on, etc. In another paragraph, describe what qualitative analysis you
+will show to verify the project works, such as what are the sanity cases for the
+approach, how will you visualize the internals of the algorithm to verify it
+works, what’s your moonshot case, i.e. it’ll be awesome and impressive if you
+get there. Note that these are not promises, we’re not going to hold you to what
+you say here, but we want to see if you are able to think about evaluation of
+your project in a critical manner.
+
+
+## Goals
+
+Next pick 3 goals. The first goal is the minimum goal. This is the minimum your
+project should achieve to pass the course. The second goal is the realistic
+goal, this is a goal you will likely achieve during the course and should
+provide some interesting results. The third goal is the ambitious one, this
+would provide you awesome results but would be difficult to achieve. For
+reference think of how goals are described in crowdfunding projects like
+Kickstarter.
+
+Break down the minimum goal into 2 milestones, the first one of which should be
+achieved by February 7. For the realistic goal also define 2 milestones. For the
+ambitious goal define 1 milestone. The milestones have to be verifiable based on
+what you define in your evaluation plan section. List the 5 milestones (in
+total) as 5 bullets breaking down the 3 goals.
+
+## Appointment with the Instructor
+
+One member should schedule for the team an appointment with the instructor in
+the week starting 01/27 (or 02/03, if no slots are available). Try to select a
+time such that all members of the team can attend (there shouldn’t be conflicts,
+since we are meeting during lectures). On the proposal page, mention the date
+and time you have reserved the appointment for.
+
+You can make select a time using https://calendly.com/uci-cs175rl-w20
+
+-->
+
+<h2 id="summary">Summary</h2>
+
+<p>One of the key measures of a reinforcement learning algorithm is its sample
+efficiency. Despite the recent success of deep reinforcement learning on a wide
+variety of tasks <a class="citation" href="#Mnih2015">(Mnih et al., 2015; Heess et al., 2017)</a>, it is
+still difficult to train a policy efficiently. One popular approach to solving
+this problem is to incorporate demonstrations from humans or other controllers,
+as in <a class="citation" href="#AAAI1816976">(Hester et al., 2018)</a>. Demonstrations provide a “starting point” for the
+agent, so that it does not have to waste steps wandering the environment.
+Meanwhile, looking at supervised learning, a common approach to improve
+performance involves ensembles, essentially collections of models whose
+predictions are aggregated to create a more accurate prediction
+<a class="citation" href="#Goodfellow-et-al-2016">(Goodfellow et al., 2016)</a>. Though ensembles have been attempted before in
+deep reinforcement learning, they have not gained much traction. Yet, we believe
+ensembles may hold some promise, as <a class="citation" href="#Faußer2015">(Faußer &amp; Schwenker, 2015)</a> has shown that feeding
+environment interactions to an ensemble, instead of a single agent, can lead to
+better performance. Thus, we seek to combine these two approaches –
+demonstrations and ensembles, and investigate their effects on sample efficiency
+and performance. Specifically, we seek to implement our algorithms (likely an
+actor-critic method such as <a class="citation" href="#soft-actor-critic">(Haarnoja et al., 2018)</a>) in the Duckietown
+platform <a class="citation" href="#duckietown">(Paull et al., 2017)</a> and ultimately compete in the lane following
+challenges of the AI Driving Olympics <a class="citation" href="#aido">(Zilly et al., 2019)</a>.</p>
+
+<h2 id="evaluation-plan">Evaluation Plan</h2>
+
+<h3 id="quantitative">Quantitative</h3>
+
+<p>We will evaluate our project by running it in the Duckietown platform. Due to
+the compressed timeline of this project, we will focus on running in simulation,
+as real robots introduce technical difficulties that are out of scope. Within
+the Duckietown platform, our goal will be to perform the LF (Lane Following),
+LFV (Lane Following with dynamic Vehicles), and LFVI (Lane Following with
+dynamic Vehicles and Intersections) tasks of the AI Driving Olympics. The
+metrics for our project will consist of the performance metrics defined in
+<a class="citation" href="#aido">(Zilly et al., 2019)</a> – namely, Performance, obedience to Traffic Law, and Comfort.
+In addition to these metrics, we will measure sample efficiency by looking at
+our agents’ performance after various numbers of interactions with the
+environment. We plan to vary our algorithms along two axes – with and without
+demonstrations, and with varying ensemble sizes. Our baseline will be an agent
+that does not use any demonstrations and has an ensemble of size 1 (i.e. a
+single model). As we have little prior experience with Duckietown, it is
+difficult to estimate how much better our algorithms will do, but based on the
+performance improvements described in <a class="citation" href="#Faußer2015">(Faußer &amp; Schwenker, 2015)</a> and
+<a class="citation" href="#AAAI1816976">(Hester et al., 2018)</a>, we estimate that adding ensembles and demonstrations
+will cause our policies to have 50% improvement in performance over the
+baseline, while requiring on the order of 10<sup>7</sup> fewer episodes to
+achieve the same performance as the baseline agent. To summarize, we will
+evaluate our algorithms on the AI Driving Olympics in Duckietown on the basis of
+performance and sample efficiency.</p>
+
+<h3 id="qualitative">Qualitative</h3>
+
+<p>We will evaluate our performance qualitatively by looking watching videos of our
+agents’ performance in the Duckietown simulation (and perhaps in real world). We
+will know our agent is working if it is successfully completing the lane
+following challenges, i.e. driving along the road in the simulation. To
+visualize the internals of our algorithm, we will plot the average return of the
+agent after various numbers of environment interactions and training steps, as
+well as the loss functions of our neural networks. In general, loss should
+converge to zero, while return should increase and stabilize at an asymptote. As
+a stretch, we would evaluate our algorithm on a physical Duckiebot at UCI; as
+the ultimate moonshot, we would submit our algorithm to the upcoming AIDO and
+take first place at the competition.</p>
+
+<h2 id="goals">Goals</h2>
+
+<ol>
+  <li>Minimum Goal: Train and evaluate ensembles of actor-critic models
+    <ul>
+      <li>Milestone 1 (due February 7): Implement and evaluate a Soft Actor-Critic
+agent in the LF challenge</li>
+      <li>Milestone 2: Implement a Soft Actor-Critic agent that uses an ensemble, and
+evaluate it in the LF, LFV, and LFVI challenges</li>
+    </ul>
+  </li>
+  <li>Realistic Goal: Incorporate demonstrations into the agent and evaluate it on
+the LF, LFV, and LFVI challenges</li>
+  <li>Ambitious Goal: Transfer the algorithms to a physical Duckiebot and compete
+in the next iteration of AI-DO</li>
+</ol>
+
+<h2 id="references">References</h2>
+
+<ol class="bibliography"><li><span id="Mnih2015">Mnih, V., Kavukcuoglu, K., Silver, D., Rusu, A. A., Veness, J., Bellemare, M. G., Graves, A., Riedmiller, M., Fidjeland, A. K., Ostrovski, G., Petersen, S., Beattie, C., Sadik, A., Antonoglou, I., King, H., Kumaran, D., Wierstra, D., Legg, S., &amp; Hassabis, D. (2015). Human-level control through deep reinforcement learning. <i>Nature</i>, <i>518</i>(7540), 529–533. https://doi.org/10.1038/nature14236</span></li>
+<li><span id="DBLP:journals/corr/HeessTSLMWTEWER17">Heess, N., TB, D., Sriram, S., Lemmon, J., Merel, J., Wayne, G., Tassa, Y., Erez, T., Wang, Z., Eslami, S. M. A., Riedmiller, M. A., &amp; Silver, D. (2017). Emergence of Locomotion Behaviours in Rich Environments. <i>CoRR</i>, <i>abs/1707.02286</i>. http://arxiv.org/abs/1707.02286</span></li>
+<li><span id="AAAI1816976">Hester, T., Vecerik, M., Pietquin, O., Lanctot, M., Schaul, T., Piot, B., Horgan, D., Quan, J., Sendonaris, A., Osband, I., Dulac-Arnold, G., Agapiou, J., Leibo, J., &amp; Gruslys, A. (2018). <i>Deep Q-learning From Demonstrations</i>. https://aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16976</span></li>
+<li><span id="Goodfellow-et-al-2016">Goodfellow, I., Bengio, Y., &amp; Courville, A. (2016). <i>Deep Learning</i>. MIT Press.</span></li>
+<li><span id="Faußer2015">Faußer, S., &amp; Schwenker, F. (2015). Neural Network Ensembles in Reinforcement Learning. <i>Neural Processing Letters</i>, <i>41</i>(1), 55–69. https://doi.org/10.1007/s11063-013-9334-5</span></li>
+<li><span id="soft-actor-critic">Haarnoja, T., Zhou, A., Abbeel, P., &amp; Levine, S. (2018). Soft Actor-Critic: Off-Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor. In J. Dy &amp; A. Krause (Eds.), <i>Proceedings of the 35th International Conference on Machine Learning</i> (Vol. 80, pp. 1861–1870). PMLR. http://proceedings.mlr.press/v80/haarnoja18b.html</span></li>
+<li><span id="duckietown">Paull, L., Tani, J., Ahn, H., Alonso-Mora, J., Carlone, L., Cap, M., Chen, Y. F., Choi, C., Dusek, J., Fang, Y., Hoehener, D., Liu, S., Novitzky, M., Okuyama, I. F., Pazis, J., Rosman, G., Varricchio, V., Wang, H., Yershov, D., … Censi, A. (2017). Duckietown: An open, inexpensive and flexible platform for autonomy education and research. <i>2017 IEEE International Conference on Robotics and Automation (ICRA)</i>, 1497–1504. https://doi.org/10.1109/ICRA.2017.7989179</span></li>
+<li><span id="aido">Zilly, J., Tani, J., Considine, B., Mehta, B., Daniele, A. F., Diaz, M., Bernasconi, G., Ruch, C., Hakenberg, J., Golemo, F., Bowser, A. K., Walter, M. R., Hristov, R., Mallya, S., Frazzoli, E., Censi, A., &amp; Paull, L. (2019). The AI Driving Olympics at NeurIPS 2018. <i>ArXiv Preprint ArXiv:1903.02503</i>.</span></li></ol>
+</div><div class="d-print-none"><footer class="article__footer"><!-- start custom article footer snippet -->
+
+<!-- end custom article footer snippet --></footer></div>
+
 </div>
 
+<script>(function() {
+  var SOURCES = window.TEXT_VARIABLES.sources;
+  window.Lazyload.js(SOURCES.jquery, function() {
+    $(function() {
+      var $this ,$scroll;
+      var $articleContent = $('.js-article-content');
+      var hasSidebar = $('.js-page-root').hasClass('layout--page--sidebar');
+      var scroll = hasSidebar ? '.js-page-main' : 'html, body';
+      $scroll = $(scroll);
 
-</div><section class="page__comments d-print-none"></section></article><!-- start custom main bottom snippet -->
+      $articleContent.find('.highlight').each(function() {
+        $this = $(this);
+        $this.attr('data-lang', $this.find('code').attr('data-lang'));
+      });
+      $articleContent.find('h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]').each(function() {
+        $this = $(this);
+        $this.append($('<a class="anchor d-print-none" aria-hidden="true"></a>').html('<i class="fas fa-anchor"></i>'));
+      });
+      $articleContent.on('click', '.anchor', function() {
+        $scroll.scrollToAnchor('#' + $(this).parent().attr('id'), 400);
+      });
+    });
+  });
+})();
+</script></div><section class="page__comments d-print-none"></section></article><!-- start custom main bottom snippet -->
 
 <!-- end custom main bottom snippet --></div>
             </div></div></div><div class="page__footer d-print-none">
